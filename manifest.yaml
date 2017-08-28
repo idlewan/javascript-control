@@ -1,0 +1,27 @@
+manifest_version: 2
+name: Javascript Control
+author: Erwan Ameil
+homepage_url: https://github.com/idlewan/javascript-control
+version: '1.0'
+
+icons:
+  128: js.png
+
+description: >
+  Add a button in the url bar to block or enable javascript per-site.
+
+background:
+  scripts:
+  - background.js
+
+page_action:
+  browser_style: true
+  default_icon: js_disabled.png
+  default_title: Enable Javascript
+
+permissions:
+- '<all_urls>'
+- webRequest
+- webRequestBlocking
+- storage
+- tabs
