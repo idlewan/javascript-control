@@ -27,7 +27,7 @@ function add_csp_nojs_header(response) {
 browser.webRequest.onHeadersReceived.addListener(
     add_csp_nojs_header,
     {urls: ["<all_urls>"],
-     types: ["main_frame", "sub_frame"]},
+     types: ["main_frame"]},
     ["blocking", "responseHeaders"]
 )
 
